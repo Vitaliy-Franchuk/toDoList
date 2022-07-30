@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #333;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+
+.nav{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 580px;
+    margin-left: 1000px;
+    transition: 1s;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;background-color: crimson;
+    color: #fff;
+    font-weight: 500;
+    top: 10px;
+    position: relative;
+}
+
+.OrSticker{
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/OrSticker.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.RedSticker{
+    width: 130px;
+    height: 130px;
+    background-image: url(./img/RedSticker.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.GrSticker{
+    width: 130px;
+    height: 130px;
+    background-image: url(./img/GrSticker.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.orange-color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background-color: orangered;
+    transition: 0.3s;
+}
+.red-color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background-color: crimson;
+    transition: 0.3s;
+}
+.green-color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background-color: green;
+    transition: 0.3s;
+
+}
+.color{
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+     top: 570px;
+     margin-left: 1260px; 
+    transition: 1s;
+}
+.red-color:hover{
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.green-color:hover{
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.orange-color:hover{
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------- */
+
+.form {
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    opacity: 3;
+    color: orangered;
+
+}
+.form input {
+    width: 100%;
+    height: 100%;
+    color: orangered;
+    padding-top: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: cursive;
+    
+}
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+}
+.form label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #ffffff;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+  
+.content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+.form input:focus {
+    outline: none;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    left: 0px;
+    color: #ffffff;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+.inp:focus{
+    border-color: aqua;
+}
